@@ -1,4 +1,4 @@
-public class Patient {
+public class Patient implements Comparable<Patient>{
     
     private String name;
     private String symptom;
@@ -37,6 +37,11 @@ public class Patient {
     @Override
     public String toString() {
         return "Paciente: " + name + " | sintoma: " + symptom + " | codigo: " + emergencyCode;
+    }
+
+    @Override
+    public int compareTo(Patient nextPatient) {
+        return Character.compare(this.emergencyCode, nextPatient.getEmergencyCode());
     }
 
     
