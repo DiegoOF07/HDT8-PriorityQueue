@@ -1,13 +1,13 @@
-import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class PriorityQueue<T extends Comparable<T>>{
     private Node<T> root;
-    private ArrayList<T> queue;
+    private LinkedList<T> queue;
 
 
     public PriorityQueue(){
         this.root = null;
-        this.queue = new ArrayList<T>();
+        this.queue = new LinkedList<T>();
     }
 
     private void insert(T value, Node<T> current){
@@ -34,16 +34,26 @@ public class PriorityQueue<T extends Comparable<T>>{
         }
     }
 
-    public ArrayList<T> showQueue() {
-        return showQueue(root);
+    public LinkedList<T> getQueue() {
+        return getQueue(root);
     }
 
-    private ArrayList<T> showQueue(Node<T> current) {
+    private LinkedList<T> getQueue(Node<T> current) {
         if (current != null) {
-            showQueue(current.getLeft());
-            queue.add(current.getValue());
-            showQueue(current.getRight());
+            getQueue(current.getLeft());
+            queue.offer(current.getValue());
+            getQueue(current.getRight());
         }
         return queue;
     }
+
+    public T remove(){
+        if(!queue.isEmpty()){
+            return queue.poll();
+        }
+        return null;
+    }
+
+
+
 }
