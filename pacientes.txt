@@ -1,0 +1,20 @@
+Arnulfo, Gripe, E
+María, Dolor de cabeza, D
+Juan, Fiebre, C
+Laura, Tos, E
+Pedro, Congestión nasal, E
+Ana, Dolor de garganta, D
+Carlos, Fatiga, C
+Sofía, Mareos, D
+Luis, Escalofríos, D
+Elena, Dolor abdominal, C
+Diego, Náuseas, B
+Valeria, Dolor de espalda, C
+Manuel, Paro cardiaco, A
+Lucía, Shock anafilactico, A
+Fernando, Desmayo, B
+Gabriela, Dolor de muela, B
+Andrés, Diarrea, C
+Isabela, Dolor de cabeza, D
+Pablo, Hinchazon, D
+Martina, Sarpullido, E
