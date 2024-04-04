@@ -1,6 +1,9 @@
 import java.util.LinkedList;
 import java.util.Scanner;
-
+/**
+ * @author Diego Flores 23714
+ * Clase encargada de mostrar los datos al usuario y ejecutar el programa
+ */
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -29,6 +32,9 @@ public class Main {
         }
     }
 
+    /**
+     * @description SubMenu para la cola de prioridad propia
+     */
     public static void subMenu1(){
         PriorityQueue<Patient> myQueue = new PriorityQueue<>();
         LinkedList<Patient> myPatients = null;
@@ -92,6 +98,9 @@ public class Main {
         }
     }
 
+    /**
+     * @description SubMenu para la cola de prioridad propia de Java Collection Framework
+     */
     public static void subMenu2(){
         java.util.PriorityQueue<Patient> myQueue = new java.util.PriorityQueue<>();
         Reader reader = new Reader("pacientes.txt");

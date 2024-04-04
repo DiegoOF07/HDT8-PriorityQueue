@@ -4,6 +4,11 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
+
+/**
+ * @author Diego Flores 23714
+ * Clase encargada de manejar los datos del archivo de texto
+ */
 public class Reader {
 
     private File file;
@@ -18,7 +23,7 @@ public class Reader {
 
      /** 
      * @description Método que se encarga de leer el archivo con los pacientes
-     * @return ArrayList<String>
+     * @return ArrayList<Patient>
      * @throws Exception
      */
     public ArrayList<Patient> read() throws Exception{
